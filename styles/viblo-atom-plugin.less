@@ -1,0 +1,64 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@custom-font-path: "atom://viblo-atom-plugin";
+@font-face {
+  font-family: 'viblo';
+  src:url("atom://viblo-atom-plugin/fonts/viblo.eot");
+  src:url("atom://viblo-atom-plugin/fonts/viblo.eot?#iefix") format("embedded-opentype"),
+    url("atom://viblo-atom-plugin/fonts/viblo.woff") format("woff"),
+    url("atom://viblo-atom-plugin/fonts/viblo.ttf") format("truetype"),
+    url("atom://viblo-atom-plugin/fonts/viblo.svg#viblo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.tab {
+  &[data-type="VibloPluginSettingsView"] {
+    &:before {
+        background: rgb(232, 100, 47) !important;
+    }
+    .close-icon {
+      &:hover {
+        background-color: rgb(232, 100, 47) !important;
+      }
+    }
+  }
+  &.active {
+    .icon-viblo-logo {
+      &:before {
+        color: rgb(232, 100, 47);
+      }
+    }
+  }
+  .icon-viblo-logo {
+    &:before {
+      content: "\e000";
+      color: rgba(232, 100, 47, 0.5);
+      font-family: 'viblo' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      vertical-align: -webkit-baseline-middle;
+      font-size: 2.2em;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+.viblo-atom-plugin {
+  &.settings-view {
+    .section {
+      &:first-child, &:last-child {
+        padding: 1em 4.5em 4.5em 4.5em;
+      }
+    }
+  }
+}
