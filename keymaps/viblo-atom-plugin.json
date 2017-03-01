@@ -1,5 +1,11 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "viblo-view:open"
+    "ctrl-alt-s": "viblo-view:settings"
+  },
+  ".platform-darwin .markdown-preview": {
+    "cmd-alt-p": "viblo-view:publish"
+  },
+  ".platform-win32 .markdown-preview, .platform-linux .markdown-preview": {
+    "ctrl-alt-p": "viblo-view:publish"
   }
 }

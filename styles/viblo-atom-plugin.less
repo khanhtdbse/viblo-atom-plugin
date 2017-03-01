@@ -62,3 +62,20 @@
     }
   }
 }
+
+.modal {
+  .body {
+    .submit-loader {
+      display: none;
+      text-align: center;
+    }
+    &.request-loading {
+      .submit-loader {
+        display: block;
+      }
+      .content {
+        display: none;
+      }
+    }
+  }
+}

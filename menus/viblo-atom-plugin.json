@@ -1,4 +1,12 @@
 {
+  "context-menu": {
+      ".markdown-preview" : [
+        {
+          "label": "Publish to Viblo",
+          "command": "viblo-view:publish"
+        }
+      ]
+  },
   "menu": [
     {
       "label": "Packages",
@@ -7,20 +15,12 @@
           "label": "Viblo Editor",
           "submenu": [
             {
-              "label": "Open",
-              "command": "viblo-view:open"
-            },
-            {
-              "label": "Posts",
-              "command": "viblo-view:posts"
-            },
-            {
-              "label": "Drafts",
-              "command": "viblo-view:drafts"
-            },
-            {
               "label": "Settings",
               "command": "viblo-view:settings"
+            },
+            {
+              "label": "Publish",
+              "command": "viblo-view:publish"
             }
           ]
         }
