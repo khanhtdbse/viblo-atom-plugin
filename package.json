@@ -7,11 +7,9 @@
     "atom",
     "markdown",
     "integration",
+    "social sharing",
     "viblo"
   ],
-  "activationCommands": {
-    "atom-workspace": "viblo-view:open"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/framgia/viblo-atom-plugin.git"
@@ -27,18 +25,8 @@
     "apiToken": {
       "type": "string",
       "default": "",
-      "description": "Viblo API token",
+      "description": "Paste your private VIBLO API token here...",
       "title": "To integrate with Viblo Sharing Platform you must to create new API token on Viblo Profile Page"
-    },
-    "autosave": {
-      "type": "boolean",
-      "default": true
-    },
-    "autosaveIntervalInMinutes": {
-      "type": "integer",
-      "default": 5,
-      "minimum": 1,
-      "maximum": 60
     }
   },
   "homepage": "https://github.com/framgia/viblo-atom-plugin#readme",
@@ -48,9 +36,14 @@
   "styles": [
     "styles/viblo-atom-plugin.less"
   ],
+  "deserializers": {
+    "VibloPluginSettingsView": "createSettingsView"
+  },
   "author": "amelkikh",
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
+    "fs-plus": "^2.9.3",
+    "jquery": "^3.1.1",
     "markdown-it": "^8.2.2",
     "markdown-it-emoji": "^1.3.0",
     "marked": "^0.3.6",
