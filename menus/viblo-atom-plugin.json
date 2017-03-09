@@ -1,6 +1,18 @@
 {
   "context-menu": {
+      "atom-workspace atom-text-editor[data-grammar*=\"gfm\"]": [
+        {
+          "label": "Publish to Viblo",
+          "command": "viblo-view:publish"
+        }
+      ],
       ".markdown-preview" : [
+        {
+          "label": "Publish to Viblo",
+          "command": "viblo-view:publish"
+        }
+      ],
+      ".tree-view .file .name[data-name$=\\.md]": [
         {
           "label": "Publish to Viblo",
           "command": "viblo-view:publish"

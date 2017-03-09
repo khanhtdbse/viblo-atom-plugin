@@ -1,5 +1,5 @@
 <!--
-title:aadasd
+title:test
 -->
 
 # viblo-atom-plugin package
