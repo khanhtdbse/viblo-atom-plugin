@@ -3,19 +3,21 @@
       "atom-workspace atom-text-editor[data-grammar*=\"gfm\"]": [
         {
           "label": "Publish to Viblo",
-          "command": "viblo-view:publish"
+          "command": "viblo-view:toggle"
+        },
+        {
+          "label": "Viblo Preview",
+          "command": "viblo-view:toggle-preview"
         }
       ],
       ".markdown-preview" : [
         {
           "label": "Publish to Viblo",
-          "command": "viblo-view:publish"
-        }
-      ],
-      ".tree-view .file .name[data-name$=\\.md]": [
+          "command": "viblo-view:toggle"
+        },
         {
-          "label": "Publish to Viblo",
-          "command": "viblo-view:publish"
+          "label": "Sync Source",
+          "command": ":sync-source"
         }
       ]
   },
@@ -32,7 +34,7 @@
             },
             {
               "label": "Publish",
-              "command": "viblo-view:publish"
+              "command": "viblo-view:toggle"
             }
           ]
         }

@@ -1,17 +1,25 @@
 {
   ".platform-darwin atom-workspace": {
-    "cmd-alt-s": "viblo-view:settings",
-    "escape": "viblo-view:publish"
+    "cmd-S": "viblo-view:settings",
+    "cmd-alt-v": "viblo-view:toggle"
   },
   ".platform-darwin .markdown-preview, .platform-darwin atom-text-editor": {
-    "cmd-alt-p": "viblo-view:publish"
+    "cmd-alt-v": "viblo-view:toggle"
+  },
+  ".platform-darwin atom-workspace, .platform-darwin atom-workspace atom-text-editor" : {
+    "cmd-alt-p": "viblo-view:toggle-preview"
   },
 
+
+
+  ".platform-win32 atom-workspace, .platform-win32 atom-workspace atom-text-editor, .platform-linux atom-workspace, .platform-linux atom-workspace atom-text-editor" : {
+    "ctrl-alt-p": "viblo-view:toggle-preview"
+  },
   ".platform-win32 atom-workspace, .platform-linux atom-workspace": {
-    "ctrl-alt-s": "viblo-view:settings",
-    "escape": "viblo-view:publish"
+    "alt-S": "viblo-view:settings",
+    "ctrl-alt-v": "viblo-view:toggle"
   },
   ".platform-win32 atom-text-editor, .platform-win32 .markdown-preview, .platform-linux atom-text-editor, .platform-linux .markdown-preview" : {
-    "ctrl-alt-p": "viblo-view:publish"
+    "ctrl-alt-v": "viblo-view:toggle"
   }
 }

@@ -17,13 +17,11 @@
 }
 .tab {
   &[data-type="VibloPluginSettingsView"] {
+    .title {
+      text-align: center;
+    }
     &:before {
         background: rgb(232, 100, 47) !important;
-    }
-    .close-icon {
-      &:hover {
-        background-color: rgb(232, 100, 47) !important;
-      }
     }
   }
   &.active {
@@ -54,8 +52,34 @@
   }
 }
 
+.item-views > div[is="space-pen-div"] {
+  > atom-text-editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 .viblo-atom-plugin {
   &.settings-view {
+
+    button {
+      &.btn {
+        .loading {
+          display: none;
+        }
+        &.is-processing {
+          &:before {
+            display: none;
+          }
+          .loading {
+            display: inline-block;
+          }
+        }
+      }
+    }
     .section {
       &:first-child, &:last-child {
         // padding: 1em 4.5em 4.5em 4.5em;
@@ -112,8 +136,16 @@
 
 .modal {
   .body {
+    padding: 10px;
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
     .form-control {
         font-size: 1.25em;
+        background-color: @base-background-color;
+        border-color: @base-border-color;
         height: 2em;
         padding-top: 0;
         padding-bottom: 0;
@@ -123,9 +155,9 @@
     }
     select {
       &.form-control {
-        color: #a3a8ae;
-        border-color: #111314;
-        background-color: #2b2e31;
+        color: @text-color;
+        background-color: @base-background-color;
+        border-color: @base-border-color;
         margin: 5px 0 15px;
       }
     }
