@@ -1,0 +1,90 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+//
+@import "ui-variables";
+.image-helper-view {
+
+  @bg: @base-background-color;
+
+  padding: 16px;
+  .modal-footer {
+    text-align: center;
+    clear: both;
+    display: block;
+  }
+
+  .image-thumbs {
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 15px;
+
+    img {
+      cursor: pointer;
+      width: 20%;
+      padding: 10px;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+
+  }
+
+  .splitter {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 16px;
+    // border-bottom-style: dotted;
+    background-color: contrast(@bg, lighten(@bg, 4%), darken(@bg, 4%));
+
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .drop-area {
+    text-align: center;
+    height: 100px;
+    border-style: dashed;
+    cursor: pointer;
+    margin-bottom: 32px;
+    background-color: darken(@bg, 2%);
+
+    &:hover {
+      background-color: contrast(@bg, lighten(@bg, 4%), darken(@bg, 4%));
+    }
+
+    p {
+      margin: 0;
+      position: relative;
+      top: 50%;
+      font-size: 16px;
+      transform: translateY(-52%);
+    }
+
+    &.uploader {
+      margin-bottom: 12px;
+    }
+  }
+
+  .uploader-choice {
+    margin-bottom: 24px;
+
+    select {
+      background-color: darken(@bg, 4%);
+      border-color: lighten(@bg, 10%);
+      margin: 0 6px;
+    }
+  }
+
+  .close-btn, .add-btn {
+    width: 64px;
+    text-align: center;
+    padding: 0;
+  }
+}

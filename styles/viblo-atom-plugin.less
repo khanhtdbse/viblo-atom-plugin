@@ -3,8 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
-
-@custom-font-path: "atom://viblo-atom-plugin";
+@import "./less/font-awesome.less";
 @font-face {
   font-family: 'viblo';
   src:url("atom://viblo-atom-plugin/fonts/viblo.eot");
@@ -15,26 +14,28 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 .tab {
   &[data-type="VibloPluginSettingsView"] {
     .title {
       text-align: center;
     }
     &:before {
-        background: rgb(232, 100, 47) !important;
+        background: #5488c7 !important;
     }
   }
   &.active {
     .icon-viblo-logo {
       &:before {
-        color: rgb(232, 100, 47);
+        color: #5488c7;
       }
     }
   }
   .icon-viblo-logo {
     &:before {
-      content: "\e000";
-      color: rgba(232, 100, 47, 0.5);
+      content: "\61";
+      color: rgba(84, 136, 199, 0.5);
       font-family: 'viblo' !important;
       speak: none;
       font-style: normal;
@@ -42,10 +43,8 @@
       font-variant: normal;
       text-transform: none;
       line-height: 1;
-      vertical-align: -webkit-baseline-middle;
+      vertical-align: middle;
       font-size: 2.2em;
-
-      /* Better Font Rendering =========== */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }

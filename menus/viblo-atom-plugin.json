@@ -8,16 +8,16 @@
         {
           "label": "Viblo Preview",
           "command": "viblo-view:toggle-preview"
+        },
+        {
+          "label": "Viblo Image Helper",
+          "command": "viblo-view:image-helper"
         }
       ],
       ".markdown-preview" : [
         {
           "label": "Publish to Viblo",
           "command": "viblo-view:toggle"
-        },
-        {
-          "label": "Sync Source",
-          "command": ":sync-source"
         }
       ]
   },
