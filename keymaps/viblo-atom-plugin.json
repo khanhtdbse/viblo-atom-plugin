@@ -3,7 +3,7 @@
     "cmd-S": "viblo-view:settings",
     "cmd-alt-v": "viblo-view:toggle"
   },
-  ".platform-darwin .markdown-preview, .platform-darwin atom-text-editor": {
+  ".platform-darwin .viblo-markdown-preview, .platform-darwin atom-text-editor": {
     "cmd-alt-v": "viblo-view:toggle"
   },
   ".platform-darwin atom-workspace, .platform-darwin atom-workspace atom-text-editor" : {
@@ -19,7 +19,24 @@
     "alt-S": "viblo-view:settings",
     "ctrl-alt-v": "viblo-view:toggle"
   },
-  ".platform-win32 atom-text-editor, .platform-win32 .markdown-preview, .platform-linux atom-text-editor, .platform-linux .markdown-preview" : {
+  ".platform-win32 atom-text-editor, .platform-win32 .viblo-markdown-preview, .platform-linux atom-text-editor, .platform-linux .viblo-markdown-preview" : {
     "ctrl-alt-v": "viblo-view:toggle"
+  },
+
+  ".platform-darwin .viblo-markdown-preview" : {
+    "cmd-+": "markdown-preview:zoom-in",
+    "cmd-=": "markdown-preview:zoom-in",
+    "cmd--": "markdown-preview:zoom-out",
+    "cmd-_": "markdown-preview:zoom-out",
+    "cmd-0": "markdown-preview:reset-zoom"
+  },
+
+  ".platform-win32 .viblo-markdown-preview, .platform-linux .viblo-markdown-preview" : {
+    "ctrl-+": "markdown-preview:zoom-in",
+    "ctrl-=": "markdown-preview:zoom-in",
+    "ctrl--": "markdown-preview:zoom-out",
+    "ctrl-_": "markdown-preview:zoom-out",
+    "ctrl-0": "markdown-preview:reset-zoom"
   }
+
 }
