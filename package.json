@@ -29,15 +29,15 @@
     "styles/viblo-atom-plugin.less"
   ],
   "providedServices": {
-    "autocomplete.provider": {
+    "atom.file-icons": {
       "versions": {
-        "2.0.0": "provide"
+        "1.0.0": "provideFileIcons"
       }
     }
   },
   "deserializers": {
     "VibloPluginSettingsView": "createSettingsView",
-    "MarkdownPreviewView": "createMarkdownPreviewView"
+    "VibloMarkdownPreviewView": "createVibloMarkdownPreviewView"
   },
   "author": "amelkikh",
   "dependencies": {

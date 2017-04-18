@@ -3,7 +3,7 @@
     overflow-x: auto;
     padding: 0.5em;
     color: #abb2bf;
-    background: #282c34;
+    /*background: #282c34;*/
 }
 
 .hljs-comment, .hljs-quote {
