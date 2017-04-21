@@ -7,12 +7,10 @@
     url("atom://viblo-atom-plugin/fonts/viblo.woff") format("woff"),
     url("atom://viblo-atom-plugin/fonts/viblo.ttf") format("truetype"),
     url("atom://viblo-atom-plugin/fonts/viblo.svg#viblo") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 
 [data-icon]:before {
-  font-family: "viblo" !important;
+  font-family: "viblo";
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -26,7 +24,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "viblo" !important;
+  font-family: "viblo";
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -1231,9 +1229,6 @@
 .icon-versions:before {
   content: "\e138";
 }
-.icon-x:before {
-  content: "\e139";
-}
 .icon-zap:before {
   content: "\e13a";
 }
@@ -1368,4 +1363,31 @@
 }
 .icon-up-open-mini:before {
   content: "\e15d";
+}
+.icon-table:before {
+  content: "\e15e";
+}
+.icon-slideshare:before {
+  content: "\e15f";
+}
+.icon-vimeo:before {
+  content: "\e160";
+}
+.icon-vimeo-square:before {
+  content: "\e161";
+}
+.icon-google:before {
+  content: "\e162";
+}
+.icon-codepen:before {
+  content: "\e163";
+}
+.icon-set:before {
+  content: "\e164";
+}
+.icon-ios-albums-outline:before {
+  content: "\e165";
+}
+.icon-ios-albums:before {
+  content: "\e166";
 }
