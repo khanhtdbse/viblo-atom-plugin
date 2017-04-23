@@ -43,6 +43,10 @@
     "VibloPluginSettingsView": "createSettingsView",
     "VibloMarkdownPreviewView": "createVibloMarkdownPreviewView"
   },
+  "packageDependencies": {
+    "tool-bar": "^1.0.0",
+    "markdown-writer": "^2.0.0"
+  },
   "author": "amelkikh",
   "dependencies": {
     "atom-highlight": "^0.3.0",
