@@ -1,14 +1,14 @@
 {
-  "name": "viblo-atom-plugin",
+  "name": "viblo",
   "main": "./lib/main",
   "version": "0.1.0",
-  "description": "Plug-in to integrate with the service Viblo.asia - Free service for technical knowledge sharing",
+  "description": "Plug-in to integrate with Viblo - Free service for technical knowledge sharing",
   "keywords": [
-    "atom",
     "markdown",
     "integration",
     "social sharing",
-    "viblo"
+    "viblo",
+    "viblo.asia"
   ],
   "repository": {
     "type": "git",
