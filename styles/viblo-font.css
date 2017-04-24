@@ -1391,3 +1391,6 @@
 .icon-ios-albums:before {
   content: "\e166";
 }
+.icon-x:before {
+  content: "\e139" !important;
+}

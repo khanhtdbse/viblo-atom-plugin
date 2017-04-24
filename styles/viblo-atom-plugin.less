@@ -234,7 +234,50 @@
   }
 }
 
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
 .markdown-preview:not([data-use-github-style]) pre, .markdown-preview:not([data-use-github-style]) code {
   background: @inset-panel-background-color !important;
   font-size: 1em;
+}
+.about-panel {
+  .icon-viblo:before {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    font-size: 4.5em !important;
+    color: @text-color !important;
+  }
+  .icon-viblo:hover:before {
+    color: #ffffff !important;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+  .about-links {
+    margin-top: 60px;
+
+    .icon-heart:before {
+      color: #F73131;
+    }
+    .icon:before {
+      font-size: 18px;
+      vertical-align: sub;
+    }
+  }
 }
