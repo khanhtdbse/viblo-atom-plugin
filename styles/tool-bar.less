@@ -1,0 +1,98 @@
+@import "ui-variables";
+
+.viblo-tool-bar {
+  @button-margin-size: 2px;
+  @button-border-size: 1px;
+  background-color: @base-background-color;
+  border: 1px solid @base-border-color;
+  color: @text-color;
+  display: flex;
+  justify-content: flex-start;
+
+  .icon:before {
+    color: #5488c7;
+  }
+
+  button.tool-bar-btn {
+    background-color: @base-background-color;
+    background-image: inherit;
+    border-color: @base-background-color;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin: @button-margin-size;
+    padding: 0;
+
+    &:before {
+      display: inline;
+    }
+    &:focus,
+    &:hover {
+      border-color: @button-border-color;
+      outline: none;
+    }
+  }
+
+  &.tool-bar-horizontal .tool-bar-btn:not(.tool-bar-item-align-end) + .tool-bar-btn {
+    margin-left: 0;
+  }
+
+  &.tool-bar-horizontal .tool-bar-spacer {
+    border: 0 none;
+    border-left: @button-border-size solid @button-background-color;
+    border-right: @button-border-size solid @button-border-color;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.7),rgba(0,0,0,1),rgba(0,0,0,0.7), rgba(0,0,0,0));
+    margin: @button-margin-size + 3 0;
+  }
+
+  &.tool-bar-horizontal {
+    .tool-bar-btn,
+    .tool-bar-spacer {
+      &.tool-bar-item-align-end {
+        order: 2;
+        &:first-child {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+
+  &.tool-bar-12px {
+    .tool-bar-size(12px * 2);
+  }
+  &.tool-bar-16px {
+    .tool-bar-size(16px * 2);
+  }
+  &.tool-bar-20px {
+    .tool-bar-size(20px * 2);
+  }
+  &.tool-bar-24px {
+    .tool-bar-size(24px * 2);
+  }
+  &.tool-bar-32px {
+    .tool-bar-size(32px * 2);
+  }
+
+  .tool-bar-size(@size) {
+    line-height: @size;
+
+    &.tool-bar-horizontal {
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .tool-bar-btn {
+      height: @size + (@button-border-size * 2);
+      width: @size + (@button-border-size * 2);
+      &:before {
+        font-size: @size / 2;
+        line-height: @size;
+      }
+    }
+
+    &.tool-bar-horizontal .tool-bar-spacer {
+      height: @size - 4;
+    }
+  }
+}

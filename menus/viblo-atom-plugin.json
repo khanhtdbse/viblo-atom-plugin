@@ -30,12 +30,17 @@
           "submenu": [
             {
               "label": "Settings",
-              "command": "viblo-view:settings"
+              "command": "viblo:settings"
             },
             {
               "label": "Publish",
               "command": "viblo-view:toggle"
+            },
+            {
+              "label": "About",
+              "command": "viblo:about"
             }
+
           ]
         }
       ]
