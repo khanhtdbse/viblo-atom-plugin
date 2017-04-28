@@ -10,7 +10,9 @@
 }
 
 [class^="viblo-"]:before,
-[class*=" viblo-"]:before {
+[class*=" viblo-"]:before,
+[class^="icon-viblo-"]:before,
+[class*=" icon-viblo-"]:before {
   vertical-align: sub;
   font-family: "viblo" !important;
   font-style: normal !important;
@@ -24,18 +26,11 @@
 }
 
 .icon-viblo-logo:before {
-  vertical-align: sub;
   content: "\61";
-  font-family: "viblo" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
+
+
 .viblo-logo:before {
   content: "\61";
 }
@@ -77,4 +72,13 @@
 }
 .viblo-header:before {
   content: "\6e";
+}
+.viblo-eye:before {
+  content: "\6f";
+}
+.viblo-eye-slash:before {
+  content: "\70";
+}
+.viblo-markdown:before {
+  content: "\71";
 }
