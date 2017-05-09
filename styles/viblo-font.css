@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'viblo';
-  src:url("atom://viblo-atom-plugin/fonts/viblo.eot");
-  src:url("atom://viblo-atom-plugin/fonts/viblo.eot?#iefix") format("embedded-opentype"),
-    url("atom://viblo-atom-plugin/fonts/viblo.woff") format("woff"),
-    url("atom://viblo-atom-plugin/fonts/viblo.ttf") format("truetype"),
-    url("atom://viblo-atom-plugin/fonts/viblo.svg#viblo") format("svg");
+  src:url("atom://viblo/fonts/viblo.eot");
+  src:url("atom://viblo/fonts/viblo.eot?#iefix") format("embedded-opentype"),
+    url("atom://viblo/fonts/viblo.woff") format("woff"),
+    url("atom://viblo/fonts/viblo.ttf") format("truetype"),
+    url("atom://viblo/fonts/viblo.svg#viblo") format("svg");
 }
 
 [class^="viblo-"]:before,
