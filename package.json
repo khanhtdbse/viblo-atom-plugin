@@ -1,7 +1,7 @@
 {
   "name": "viblo",
   "main": "./lib/main",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Plug-in to integrate with Viblo - Free service for technical knowledge sharing",
   "keywords": [
     "markdown",
